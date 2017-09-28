@@ -1,0 +1,1443 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Pittsburgh}
+\usecolortheme{dove} 
+%\setbeamercovered{transparent}
+% Fondo
+\setbeamercolor{background canvas}{bg=gray!5}
+\end_preamble
+\use_default_options false
+\begin_modules
+minimalistic
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 34 -1
+\bullet 1 0 33 -1
+\bullet 2 0 32 -1
+\bullet 3 0 31 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+Técnicas para la Formulación de Algoritmos
+\size default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Técnicas para la Formulación de Algoritmos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+M.C.
+\begin_inset space ~
+\end_inset
+
+Carlos Rojas Sánchez
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Licenciatura en Informática
+\begin_inset Newline newline
+\end_inset
+
+Universidad del Mar :: Puerto Escondido
+\end_layout
+
+\begin_layout Date
+.: Diseño Estructurado de Algoritmos :.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+includegraphics[scale=.3]{logo.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Los índices
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    	
+\backslash
+tableofcontents[sectionstyle=show/hide,subsectionstyle=hide/show/hide]
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addtocounter{framenumber}{-1}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Pie de página
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtobeamertemplate{navigation symbols}{}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+usebeamerfont{footline}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+usebeamercolor[fg]{footline}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{1em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+hspace{1em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+insertframenumber/
+\backslash
+inserttotalframenumber 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Encabezado
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{headline}{	
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{.5em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+leavevmode
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+hbox{		
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+begin{beamercolorbox}[left]{bg=black}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+usebeamerfont{section in head/foot}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+insertshorttitle
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+end{beamercolorbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vskip0pt
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Bullets
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{items}[square] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Pseudocódigo
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En ciencias de la computación, y análisis numérico, el pseudocódigo (o falso
+ lenguaje) es una descripción de alto nivel compacta e informal del principio
+ operativo de un programa informático u algoritmo.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+https://es.wikipedia.org/wiki/Pseudocódigo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El nivel de detalle del pseudocódigo puede, en algunos casos, acercarse
+ a la de formalizar los idiomas de propósito general.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+https://es.wikipedia.org/wiki/Pseudocódigo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+¿Qué es PSeInt?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+PSeInt (
+\series bold
+PSe
+\series default
+udo 
+\series bold
+Int
+\series default
+érprete) es una herramienta para asistir a un estudiante en sus primeros
+ pasos en programación.
+ Mediante un simple e intuitivo pseudolenguaje en español (complementado
+ con un editor de diagramas de flujo)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pseint.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Palabras reservadas
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Palabras reservadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Una palabra reservada es una palabra que tiene un significado gramatical
+ especial para ese lenguaje y no puede ser utilizada como un identificador.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Operaciones de asignación
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Operaciones de asignación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\{variable,constante\}\leftarrow\{variable,constante,expresión,función\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Contadores
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contadores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Es una variable que se incrementa un numero fijo de unidades cada vez que
+ se ejecute un proceso.
+\end_layout
+
+\begin_layout Itemize
+El contador se utiliza para llevar la cuenta de determinadas acciones que
+ se pueden solicitar durante la resolución de un problema.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contadores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+En las instrucciones de preparación se realiza la inicialización del contador
+ o contadores.
+\end_layout
+
+\begin_layout Itemize
+La inicialización consiste en poner el valor inicial de la variable que
+ representa al contador.
+ Generalmente se inicializa con el valor 0.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Acumuladores
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Acumuladores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Un acumulador es una variable cuya misión es almacenar cantidades variables.
+ 
+\end_layout
+
+\begin_layout Itemize
+Se utiliza para efectuar sumas sucesivas.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Acumuladores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La principal diferencia con el contador es que el incremento o decremento
+ de cada suma es variable en lugar de constante como en el caso del contador.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Interruptores
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interruptores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Es una variable interruptor es una variable que sólo puede tomar por valor
+ dos valores opuestos.
+ Por norma general, estos valores son: "verdadero" y "falso".
+ 
+\end_layout
+
+\begin_layout Itemize
+También es frecuente utilizar los valores: "0" y "1".
+ }
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Interruptores
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Normalmente, una variable interruptor tomará un valor u otro dependiendo
+ de ciertas cicunstancias ocurridas en un algoritmo (o programa) y, después,
+ según sea su valor, se ejecutarán unas instrucciones u otras.
+ 
+\end_layout
+
+\begin_layout Itemize
+A los interruptores también se les denomina: banderas, centinelas o conmutadores.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Ejemplos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Saludo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Área del triángulo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejercicios
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Promedio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Escriba un pseudocódigo que permita calcular e imprimir la calificación
+ semestral de una asignatura.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Promedio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/3.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Cuadrado y Cubo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Escriba un pseudocódigo que permita calcular e imprimir el cuadrado y el
+ cubo de un número entero positivo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Cuadrado y Cubo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Suma de enteros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Escriba un pseudocódigo que permita calcular e imprimir la suma de enteros
+ entre 1 y 1000.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Suma de enteros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/4.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tablas de multiplicar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Escriba un pseudocódigo que permita calcular e imprimir la tabla de multiplicar
+ del 7.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tablas de multiplicar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/6.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intercambio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Escriba un pseudocódigo que permita intercambiar el valor de dos variables,
+ mostrar el resultado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intercambio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tarea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Escriba un pseudocódigo para cada caso:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Convertir grados centigrados a fahrenheit
+\end_layout
+
+\begin_layout Itemize
+Calcular la distancia entre dos puntos, dado como datos las coordenadas
+ de los puntos P1 y P2
+\end_layout
+
+\begin_layout Itemize
+Dados los tres lados de un triángulo, determinar su área
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+Diagramas de flujo
+\end_layout
+
+\begin_layout Subsection
+Símbolos utilizados
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Símbolos utilizados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+ANSI
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/símbolos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Estructura de un diagrama de flujo
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estructura de un diagrama de flujo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+saludo
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/saludoDF.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estructura de un diagrama de flujo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Área del Triángulo
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/aTrianguloDF.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\start_of_appendix
+Apéndice
+\end_layout
+
+\begin_layout Subsection*
+Lecturas complementarias
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografía
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referencias
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Luis"
+
+\end_inset
+
+Joyanes Aguilar, Luis.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+Fundamentos de programación, algoritmos y estructura de datos
+\emph default
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ McGraw-Hill.
+ 2003, 3ª Edición.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referencias
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Osvaldo"
+
+\end_inset
+
+Cairó Battistutti, Osvaldo Gabriel.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Metodología de la programación: algoritmos, diagramas de flujo y programas.
+
+\emph default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+ 
+\emph default
+Alfaomega.
+ 2005, 3ª Edición.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

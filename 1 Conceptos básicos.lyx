@@ -1,0 +1,2104 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Pittsburgh}
+\usecolortheme{dove} 
+%\setbeamercovered{transparent}
+% Fondo
+\setbeamercolor{background canvas}{bg=gray!5}
+\end_preamble
+\use_default_options false
+\begin_modules
+minimalistic
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 34 -1
+\bullet 1 0 33 -1
+\bullet 2 0 32 -1
+\bullet 3 0 31 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+Conceptos Básicos
+\size default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Conceptos Básicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+M.C.
+\begin_inset space ~
+\end_inset
+
+Carlos Rojas Sánchez
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Licenciatura en Informática
+\begin_inset Newline newline
+\end_inset
+
+Universidad del Mar :: Puerto Escondido
+\end_layout
+
+\begin_layout Date
+.: Diseño Estructurado de Algoritmos :.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+includegraphics[scale=.3]{logo.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Los índices
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    	
+\backslash
+tableofcontents[sectionstyle=show/hide,subsectionstyle=hide/show/hide]
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addtocounter{framenumber}{-1}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Pie de página
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtobeamertemplate{navigation symbols}{}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+usebeamerfont{footline}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+usebeamercolor[fg]{footline}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{1em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+hspace{1em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+insertframenumber/
+\backslash
+inserttotalframenumber 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Encabezado
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{headline}{	
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vspace{.5em}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+leavevmode
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+hbox{		
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+begin{beamercolorbox}[left]{bg=black}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+usebeamerfont{section in head/foot}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+insertshorttitle
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+end{beamercolorbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+vskip0pt
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Bullets
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setbeamertemplate{items}[square] 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Saludos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\size huge
+Bienvenidos 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Presentaciones
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+yo
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+¿Por qué de la asignatura?
+\end_layout
+
+\begin_layout Standard
+ustedes
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+¿Nombre?
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+¿Qué espero del curso?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+no se vale decir 
+\begin_inset Quotes eld
+\end_inset
+
+pasar el curso
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Ser capaz de plantear metodológicamente la solución de problemas a través
+ del manejo de técnicas de diseño estructurado y formulación de algoritmos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+¿Qué es el diseño estructurado de algoritmos?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Modularidad
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dividir
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+Descomposición por refinamientos sucesivos
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Módulos Independientes
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Datos del curso
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Temario
+\end_layout
+
+\begin_layout Itemize
+Evaluación
+\end_layout
+
+\begin_layout Itemize
+Bibliografía
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Para empezar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+María prepara una cena especial para su familia.
+ Ha hecho 56 canapés de queso y 40 de paté.
+ Quiere repartir los canapés en el máximo número de platos posibles, de
+ manera que haya el mismo número de canapés de cada tipo en todos los platos.
+ ¿Cuántos platos necesitará?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Solución
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+El número de platos deberá ser divisor de 56 y de 40.
+ Además deberá ser el máximo divisor común, por lo que el problema se resuelve
+ haciendo el mcd (56, 40)
+\end_layout
+
+\begin_layout Frame
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "3in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $\begin{array}{ccc}
+mcd\left(56,40\right)= & 2^{3}= & 8\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+María necesitará 8 platos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Forma gráfica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Graphics
+	filename images/Algoritmo_de_Euclides_geométrico.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Forma escrita
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dados dos segmentos AB y CD (con AB>CD), restamos CD de AB tantas veces
+ como sea posible.
+ Si no hay residuo, entonces CD es la máxima medida común.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si se obtiene un residuo EA, éste es menor que CD y podemos repetir el proceso:
+ restamos EA tantas veces como sea posible de CD.
+ Si al final no queda un residuo, EA es la medida común.
+ En caso contrario obtenemos un nuevo residuo FC menor a EA.
+ 
+\end_layout
+
+\begin_layout Itemize
+El proceso se repite hasta que en algún momento no se obtiene residuo.
+ Entonces el último residuo obtenido es la mayor medida común.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Otros casos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/chiste2.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Definición de lenguaje de programación
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lenguaje de Programación
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+ Es un lenguaje formal diseñado para expresar procesos que pueden ser llevados
+ a cabo por máquinas como las computadoras.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+ Pueden usarse para crear programas que controlen el comportamiento físico
+ y lógico de una máquina, para expresar algoritmos con precisión, o como
+ modo de comunicación humana.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Lenguajes de programación
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Programación, ¿?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/chiste1.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lenguajes de programación
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+ Es un lenguaje diseñado para describir el conjunto de acciones consecutivas
+ que un equipo debe ejecutar.
+ Por lo tanto, un lenguaje de programación es un modo práctico para que
+ los seres humanos puedan dar instrucciones a un equipo.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Poner video 
+\begin_inset Quotes eld
+\end_inset
+
+Hola mundo
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ahora si, la tarea
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estudiar
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SW para Pseudocódigo
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+PSeInt (http://pseint.sourceforge.net/)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+SW para código en C
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dev-C++
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Mantras de cada día :)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Programar es una tarea fácil
+\end_layout
+
+\begin_layout Itemize
+La práctica fortalece la habilidad de programar
+\end_layout
+
+\begin_layout Itemize
+La programación es útil para todas las áreas del conocimiento
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Algoritmos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Al-Juarismi
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/juarismi.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Abu Abdallah Muḥammad ibn Mūsā al-Jwārizmī (Abu Yāffar), conocido generalmente
+ como al-Juarismi, fue un matemático, astrónomo y geógrafo persa musulmán,
+ que vivió aproximadamente entre 780 y 850.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Definición de algoritmo
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conjunto de pasos ordenados y finitos que permiten resolver un problema
+ o tarea específica.
+\end_layout
+
+\begin_layout Itemize
+Los algoritmos son independientes de los lenguajes de programación y de
+ la computadora que se vaya a emplear para ejecutarlo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Características de un algoritmo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Finito 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+En tamaño o número de instrucciones (tiene un primer y un último paso) y
+ tiempo de ejecución (debe terminar en algun momento).
+ Por lo tanto, debe tener un punto particular de inicio y fin.
+\end_layout
+
+\begin_layout Description
+Preciso 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Debe tener un orden entre los pasos.
+\end_layout
+
+\begin_layout Description
+Definido 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+No debe ser ambiguo (dobles interpretaciones); si se ejecuta el mismo algoritmo
+ el resultado siempre será el mismo, sin importar las entradas proporcionadas.
+\end_layout
+
+\begin_layout Description
+General 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Debe tolerar cambios que se puedan presentar en la definición del problema.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Representación de algoritmos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Representación de algoritmos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gráfica - Diagrama de flujo
+\end_layout
+
+\begin_layout Itemize
+No Gráfica - Pseudocódigo
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Texto narrativo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+No gráfico
+\end_layout
+
+\begin_layout Standard
+Consiste en escribir paso a paso las acciones o procedimientos que se deben
+ realizar para resolver un problema.
+ Para describir cada una de las acciones se utiliza lenguaje natural.
+ Esta técnica es bastante sencilla, pero no es muy recomendable ya que puede
+ llegar a ser muy ambiguo.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+No gráfico
+\end_layout
+
+\begin_layout Standard
+Al igual que el texto narrativo, esta técnica describe paso a paso las acciones
+ o procedimientos, pero utilizando un lenguaje de alto nivel, compacto e
+ informal.
+ Se utilizan las convenciones estructurales de un lenguaje de programación,
+ pero está pensado para que una persona pueda entenderlo.
+ Una de sus principales ventajas es que es independiente del lenguaje de
+ programación, pero el principal problema es que no existe una sintaxis
+ estándar para su uso.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Diagramas de flujo
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Consiste en una representación gráfica de un algoritmo mediante símbolos
+ bien definidos, que representan los pasos de un algoritmo, y el flujo es
+ representado mediante flechas que conectan los puntos de inicio y fin del
+ proceso.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Algoritmos cotidianos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmos cotidianos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Se refiere a todos aquellos algoritmos que nos ayudan a resolver problemas
+ diarios, y que los hacemos casi sin darnos cuenta de que estamos siguiendo
+ una metodología para resolverlos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejemplo 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Algoritmos cotidianos
+\end_layout
+
+\begin_layout Itemize
+Diseñar un algoritmo para cambiar una llanta a un coche
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+Inicio.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Traer gato.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+Levantar el coche con el gato.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Aflojar tornillos de las llantas.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+Sacar los tornillos de las llantas.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+Quitar la llanta.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<7->
+\end_layout
+
+\end_inset
+
+Poner la llanta de repuesto.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<8->
+\end_layout
+
+\end_inset
+
+Poner los tornillos.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<9->
+\end_layout
+
+\end_inset
+
+Apretar los tornillos.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<10->
+\end_layout
+
+\end_inset
+
+Bajar el gato.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<11->
+\end_layout
+
+\end_inset
+
+Fin 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejemplo 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Algoritmos cotidianos
+\end_layout
+
+\begin_layout Itemize
+Un cliente ejecuta un pedido a una fábrica.
+ La fábrica examina en su banco de datos la ficha del cliente, si el cliente
+ es solvente entonces la empresa acepta el pedido, en caso contrario rechazar
+ el pedido.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+Inicio
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Leer el pedido
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+Examinar ficha del cliente
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Si el cliente es solvente aceptar pedido, en caso contrario rechazar pedido
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+Fin
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejemplo 3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Algoritmos cotidianos
+\end_layout
+
+\begin_layout Itemize
+Determinar el mayor de tres números enteros.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+Comparar el primero y el segundo entero, deduciendo cuál es el mayor.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Comparar el mayor anterior con el tercero y deducir cuál es el mayor.
+ Este será el resultado.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ejercicio
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+Proponer el algoritmo del ejemplo 3
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+Inicio
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+Obtener el primer número (entrada), denominado NUM1.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+Obtener el segundo número (entrada), denominado NUM2.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+Compara NUM1 con NUM2 y seleccionar el mayor ; si los dos enteros son iguales,
+ seleccionar NUM1.
+ Llamar a este número MAYOR.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+Obtener el tercer número (entrada), y se denomina NUM3.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<7->
+\end_layout
+
+\end_inset
+
+Compara MAYOR con NUM3 y seleccionar el mayor ; si los dos enteros son iguales,
+ seleccionar el MAYOR.
+ Denominar a este número MAYOR.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<8->
+\end_layout
+
+\end_inset
+
+Presentar el valor MAYOR (salida).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<9->
+\end_layout
+
+\end_inset
+
+Fin
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Apéndice
+\end_layout
+
+\begin_layout Subsection*
+Lecturas complementarias
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliografía
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referencias
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Luis"
+
+\end_inset
+
+Joyanes Aguilar, Luis.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+Fundamentos de programación, algoritmos y estructura de datos
+\emph default
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ McGraw-Hill.
+ 2003, 3ª Edición.
+\end_layout
+
+\begin_layout Bibliography
+\labelwidthstring Referencias
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Osvaldo"
+
+\end_inset
+
+Cairó Battistutti, Osvaldo Gabriel.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Metodología de la programación: algoritmos, diagramas de flujo y programas.
+
+\emph default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+ 
+\emph default
+Alfaomega.
+ 2005, 3ª Edición.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
